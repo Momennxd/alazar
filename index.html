@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كلية الشريعة و القانون بجامعة الازهر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>كلية الشريعة و القانون</h1>
+                <p>جامعة الازهر</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> عن الكلية</a></li>
+                    <li><a href="departments.html"><i class="fas fa-book-open"></i> الأقسام</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>مرحباً بكم في كلية الشريعة و القانون بجامعة الازهر</h2>
+                <p>منارة العلم الشرعي والقانوني في قلب العالم الإسلامي.</p>
+                <!-- Optional: Add a button -->
+                <!-- <a href="#admissions" class="btn primary-btn"><i class="fas fa-graduation-cap"></i> شروط القبول</a> -->
+            </div>
+        </section>
+
+        <section id="about" class="section light-background">
+            <div class="container">
+                <h2><i class="fas fa-info-circle section-icon"></i> عن الكلية</h2>
+                <p class="section-intro">
+كلية الشريعة والقانون بدمنهور هي إحدى الكليات التابعة لجامعة الأزهر، وتقع في مدينة دمنهور بمحافظة البحيرة. تأسست الكلية في عام 1982م، وتهدف إلى تخريج كوادر مؤهلة في مجالي الشريعة الإسلامية والقانون، لتلبية احتياجات المجتمع في مجالات القضاء، والإفتاء، والتعليم، والمحاماة، وغيرها من المجالات ذات الصلة.
+تضم الكلية عدة أقسام علمية، منها: الفقه، وأصول الفقه، والفقه المقارن، والقانون العام، والقانون الخاص. كما تقدم برامج دراسات عليا في تخصصات متعددة. وتتميز الكلية بنشاطها البحثي، حيث تصدر مجلة "البحوث الفقهية والقانونية"، التي حصلت على المركز الأول عربيًّا في مجال الدراسات الإسلامية المتخصصة وفقًا لتقرير معامل أرسيف لعام 2024 .
+                </p>
+                <!-- Add more content about the college here -->
+            </div>
+        </section>
+
+        <section id="contact" class="section light-background">
+            <div class="container">
+                <h2><i class="fas fa-envelope section-icon"></i> اتصل بنا</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> العنوان: [عنوان الكلية هنا]</p>
+                    <p><i class="fas fa-phone"></i> هاتف: [رقم الهاتف هنا]</p>
+                    <p><i class="fas fa-envelope"></i> بريد الكتروني: [البريد الالكتروني هنا]</p>
+                    <!-- Add a contact form here if needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 كلية الشريعة و القانون بجامعة الازهر. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

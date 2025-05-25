@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أقسام كلية الشريعة و القانون بجامعة الازهر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>كلية الشريعة و القانون</h1>
+                <p>جامعة الازهر</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-info-circle"></i> عن الكلية</a></li>
+                    <li><a href="#departments"><i class="fas fa-book-open"></i> الأقسام</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="departments" class="section departments-section enhanced-bg">
+            <div class="container">
+                <div class="departments-header">
+                    <h2><i class="fas fa-book-open section-icon"></i> أقسام الكلية</h2>
+                    <p class="departments-intro">اكتشف مجموعة واسعة من الأقسام التي تجمع بين العلوم الشرعية والقانونية، وتلبي احتياجات المجتمع الحديث.</p>
+                </div>
+                <div class="departments-grid enhanced-grid">
+                    <div class="card department-card enhanced-card">
+                        <div class="card-icon enhanced-icon"><i class="fas fa-scale-balanced"></i></div>
+                        <div class="card-content">
+                            <h3>القانون العام</h3>
+                            <p>يختص بدراسة القواعد القانونية التي تنظم العلاقات بين الدولة والأفراد وتنظيم السلطات العامة.</p>
+                        </div>
+                    </div>
+                    <div class="card department-card enhanced-card">
+                        <div class="card-icon enhanced-icon"><i class="fas fa-handshake"></i></div>
+                        <div class="card-content">
+                            <h3>القانون الخاص</h3>
+                            <p>يتناول دراسة القواعد القانونية التي تنظم العلاقات بين الأفراد في المجتمع.</p>
+                        </div>
+                    </div>
+                    <div class="card department-card enhanced-card">
+                        <div class="card-icon enhanced-icon"><i class="fas fa-book-quran"></i></div>
+                        <div class="card-content">
+                            <h3>الفقه</h3>
+                            <p>يهتم بدراسة الأحكام الشرعية العملية المستنبطة من الأدلة التفصيلية.</p>
+                        </div>
+                    </div>
+                    <div class="card department-card enhanced-card">
+                        <div class="card-icon enhanced-icon"><i class="fas fa-scale-unbalanced"></i></div>
+                        <div class="card-content">
+                            <h3>الفقه المقارن</h3>
+                            <p>يختص بالدراسة المقارنة للمذاهب الفقهية وآراء العلماء في المسائل الفقهية.</p>
+                        </div>
+                    </div>
+                    <div class="card department-card enhanced-card">
+                        <div class="card-icon enhanced-icon"><i class="fas fa-tree"></i></div>
+                        <div class="card-content">
+                            <h3>أصول الفقه</h3>
+                            <p>يعنى بدراسة القواعد والأدلة الإجمالية التي يستند إليها استنباط الأحكام الشرعية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Department Modal -->
+    <div class="modal" id="departmentModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h3 class="modal-title"></h3>
+                <div class="modal-description"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 كلية الشريعة و القانون بجامعة الازهر. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Department descriptions
+        const departmentDetails = {
+            'القانون العام': 'يركز قسم القانون العام على دراسة القواعد القانونية التي تحكم العلاقة بين الدولة والأفراد، ويشمل ذلك القانون الدستوري والإداري والجنائي والمالي. يهدف القسم إلى تخريج كوادر قانونية مؤهلة للعمل في مجالات القضاء والنيابة العامة والاستشارات القانونية الحكومية. كما يهتم القسم بدراسة النظريات والمبادئ الأساسية التي تحكم عمل السلطات العامة في الدولة وعلاقتها بالأفراد والمؤسسات.',
+            'القانون الخاص': 'يختص قسم القانون الخاص بدراسة القواعد القانونية التي تنظم العلاقات بين الأفراد والمؤسسات الخاصة. يشمل ذلك القانون المدني والتجاري وقانون العمل والأحوال الشخصية. يركز القسم على تأهيل الطلاب للعمل في مجالات المحاماة والاستشارات القانونية والتحكيم التجاري. كما يهتم بدراسة العقود والالتزامات والحقوق العينية والشخصية.',
+            'الفقه': 'يعد قسم الفقه من الأقسام الأساسية في كلية الشريعة والقانون، حيث يهتم بدراسة الأحكام الشرعية العملية المستنبطة من الأدلة التفصيلية. يشمل ذلك دراسة العبادات والمعاملات والأحوال الشخصية من منظور الشريعة الإسلامية. يهدف القسم إلى تخريج علماء متخصصين في الفقه الإسلامي قادرين على الإفتاء والتدريس والبحث العلمي.',
+            'الفقه المقارن': 'أعضاء قسم الفقه المقارن بكلية الشريعة والقانون بدمنهور - العام الجامعي 2024/2025\n\nأ.د/ السيد رضوان جمعة\nرئيس القسم، أستاذ الفقه المقارن المتفرغ بالكلية\nوعضو اللجنة العلمية الدائمة، القسم الأسبق\nوترقية الأساتذة والأساتذة المساعدين\n\nأ.د/ محمد فتح الله النشار\nرئيس القسم الأسبق، أستاذ الفقه المقارن المتفرغ\nووكيل الكلية الأسبق\n\nأ.د/ علي علي غاشي\nرئيس القسم، أستاذ الفقه المقارن المتفرغ\nوعضو الجمعية المصرية للاقتصاد، الأسبق\n\nأ.د/ محمد عبد المقصود داود\nأستاذ الفقه المقارن المتفرغ بالكلية\nوعميد كلية الدراسات الإسلامية بالجامعة المصرية (سابقًا – مبارك) بكفر الشيخ\n\nأ.د/ بلال حامد إبراهيم\nرئيس القسم، أستاذ الفقه المقارن المتفرغ بالكلية\nووكيل الكلية الأسبق\n\nأ.و/ أحمد أنور المهندس\nأستاذ مساعد الفقه المقارن، ورئيس قسم\nوعضو لجنة الفتوى بالجامعة الأزهرية سابقًا\n\nد/ إبراهيم سليمان السيد\nيدرس الفقه المقارن\n\nد/ محمد صبحي المتبولي\nيدرس الفقه المقارن\nوعضو لجنة الفتوى بالجامعة الأزهرية\n\nد/ رياض محمد حجاج\nيدرس الفقه المقارن\nوعضو لجنة الفتوى بالجامعة الأزهرية\n\nد/ أشرف عبد السلام كلالي\nيدرس الفقه المقارن\n\nد/ إنصاف إبراهيم خضر\nيدرس الفقه المقارن\n\nد/ حسين إبراهيم رياض\nيدرس الفقه المقارن\n\nو/ رضا علوي يوسف\nمعيد، يدرس الفقه المقارن\n\nو.و/ عبد الرحيم أحمد فؤاد النصابي\nمعيد، يدرس الفقه المقارن',
+            'أصول الفقه': 'يعتبر قسم أصول الفقه من أهم الأقسام العلمية في الكلية، حيث يختص بدراسة القواعد والأدلة الإجمالية التي يبنى عليها استنباط الأحكام الشرعية. يهدف القسم إلى تأهيل الطلاب في فهم مناهج الاستنباط وطرق الاستدلال وقواعد التفسير والترجيح. كما يهتم بدراسة مقاصد الشريعة وأصول التشريع الإسلامي.'
+        };
+
+        // Modal functionality
+        const modal = document.getElementById('departmentModal');
+        const modalTitle = modal.querySelector('.modal-title');
+        const modalDescription = modal.querySelector('.modal-description');
+        const modalClose = modal.querySelector('.modal-close');
+
+        // Add click handlers to department cards
+        document.querySelectorAll('.department-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h3').textContent;
+                modalTitle.textContent = title;
+                modalDescription.textContent = departmentDetails[title];
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal handlers
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Escape key closes modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
